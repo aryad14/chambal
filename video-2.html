@@ -11,58 +11,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gallery-style.css">
 
 
     <!-- Fonts -->
     <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,100,400,500&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=author@400,500,200,600,300,700&display=swap" rel="stylesheet">
 
-    <title>Pratik Deshpande - Home</title>
+    <title>Pratik Deshpande - Video</title>
 
-    <style>
-        /* Styling for Gallery */
-        .row {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Change Column Count to change Columns in the Gallery */
-        #app {
-            -webkit-column-count: 4;
-            -moz-column-count: 4;
-            column-count: 3;
-            -webkit-column-gap: 15px;
-            -moz-column-gap: 15px;
-            column-gap: 25px;
-        }
-
-        #app img {
-            margin-bottom: 25px;
-        }
-
-        @media (max-width: 768px) {
-            #app {
-                column-gap: 15px;
-                column-count: 2;
-            }
-
-            #app img {
-                margin-bottom: 15px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            #app {
-                column-gap: 5px;
-                column-count: 1;
-            }
-
-            #app img {
-                margin-bottom: 15px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -77,7 +33,7 @@
                 </button>
                 <ul class="navbar-nav ms-auto flex-row d-none d-md-flex">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link text-white me-4 active">Home</a>
+                        <a href="index.html" class="nav-link text-white me-4">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link text-white me-4">About</a>
@@ -114,7 +70,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-white mt-2 fs-5" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link text-white mt-2 fs-5 active" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Video
                             <span class="d-inline ms-2"><i class="bi bi-chevron-down"></i></span>
@@ -160,27 +116,73 @@
     </header>
 
     <main>
-        <section class="homepage-gallery">
-            <div class="container-fluid">
-                <div id="app">
-                    <img src="img/aakash-mally-mGYUvtvu5Xw-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/aatur-harsh--7vtLNkRMCA-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/abhas-mishra-BD3qGeorAFY-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/abhinav-chadha-sCkjk3D5FW8-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/aditya-prakash-rJcakYQpxkw-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/aditya-siva-3P1G67zNyCI-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/alexandre-chambon-iRON0g6iO0k-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/arushi-saini-1cxSoKGBrfo-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/ashes-sitoula--8ZESyFapTk-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/brijesh-nirmal-g3Vw2WeV8i8-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/brijesh-nirmal-gd77PFzULjE-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/brijesh-nirmal-I-abLNlHkfs-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/brijesh-nirmal-vSGje_8WDpM-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/deva-darshan-u3FLBxxzClI-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/deva-darshan-UzH8LXiwvUM-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/fares-nimri-v6uFg-OLrCc-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/frank-holleman-fvmMDEvInLE-unsplash.jpg" alt="" class="workCls">
-                    <img src="img/frank-holleman-fyjUa9NUzSk-unsplash.jpg" alt="" class="workCls">
+        <section class="video-container">
+            <div class="container-fluid px-md-2 d-flex d-md-block justify-content-center px-1">
+                <div class="row w-100 justify-content-center ps-md-4 pe-md-1 pe-0">
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="ratio ratio-16x9 my-4">
+                            <iframe src="https://www.youtube.com/embed/vTt8gW_O3pw" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -215,13 +217,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
-    <script>
-        const a = new ImgPreviewer('body', {
-            scrollbar: true
-        })
-    </script>
 </body>
 
 </html>
