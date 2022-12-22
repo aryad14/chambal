@@ -50,6 +50,10 @@ a:hover {
     -webkit-transition: all .3s ease-in-out;
 }
 
+.nav-link .active::after{
+    border-bottom: 1px solid #fff !important;
+}
+
 .nav-link,
 .dropdown-item {
     font-family: 'Author', sans-serif;
