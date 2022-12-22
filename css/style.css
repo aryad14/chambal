@@ -1,0 +1,68 @@
+button {
+    border-radius: 0;
+}
+
+button:focus {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.bg-blue {
+    background-color: #1b339f !important;
+    color: #fff !important;
+}
+
+.btn-close {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    font-family: 'Ranade', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+.nav-item {
+    width: fit-content;
+}
+
+.nav-link, .dropdown-item{
+    font-family: 'Author', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0 !important;
+    display: block !important;
+    height: 1px !important;
+    color: #fff !important;
+    transition: width .3s !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+.homepage-gallery {
+    padding: 2rem 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .homepage-gallery {
+        padding: 1.5rem 0.5rem;
+    }
+}
