@@ -54,8 +54,21 @@ a:hover {
     -webkit-transition: all .3s ease-in-out;
 }
 
-.nav-link .active::after{
-    border-bottom: 1px solid #fff !important;
+.nav-link::after {
+    content: '' !important;
+    display: block !important;
+    width: 0;
+    height: 1px !important;
+    background-color: #fff !important;
+    transition: width .35s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
 }
 
 .nav-link,
@@ -68,10 +81,6 @@ a:hover {
     width: 100%;
 }
 
-/* .dropdown-menu {
-    transition: height .3s;
-} */
-
 .dropdown-item:hover {
     background-color: rgb(220, 220, 220);
     color: #000 !important;
@@ -79,14 +88,6 @@ a:hover {
 
 .dropdown-item:focus {
     background-color: rgb(201, 201, 201);
-}
-
-.nav-link:hover {
-    border-bottom: 1px solid #fff;
-}
-
-.nav-link:hover::after {
-    width: 100%;
 }
 
 i {
