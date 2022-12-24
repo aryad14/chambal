@@ -23,9 +23,9 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-dark mx-md-2 mx-sm-3 mt-sm-3 p-0 mt-md-4">
-            <div class="container-fluid mx-md-4 py-md-4 py-3 bg-blue">
+    <header class="about-head-z-1 position-absolute w-100">
+        <nav class="navbar navbar-dark mx-md-2 mx-sm-3 mt-sm-3 p-0 mt-md-4 bg-transparent">
+            <div class="container-fluid mx-md-4 py-md-4 py-3 bg-transparent">
                 <a href="index.html" class="navbar-brand ms-md-4 ms-3">Pratik Deshpande</a>
                 <button class="navbar-toggler border-0 order-2 py-0 px-0 pe-3 pb-1" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight" aria-expanded="false" aria-controls="offcanvasRight">
@@ -116,34 +116,43 @@
     </header>
 
     <main>
-        <section class="contact-section">
-            <div class="contact-left">
-                <img src="img/navdeep-panwar-_Qtgj2nXqyY-unsplash.jpg" alt="">
+        <section class="contact">
+            <div class="contact-head-wrapper position-relative">
+                <div class="contact-img">
+                    <img src="img/aditya-siva-3P1G67zNyCI-unsplash.jpg" alt="contact_img">
+                </div>
+                <div class="contact-img-head position-absolute">
+                    <h3>Contact Me</h3>
+                </div>
             </div>
-            <div class="contact-right">
-                <h3>Get in Touch</h3>
-                <h5>Paragraph text comes here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum dolor sit amet, consectetur elit.</h5>
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">First Name *</label>
-                        <input type="text" class="form-control" id="inputEmail4" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Email *</label>
-                        <input type="email" class="form-control" id="inputAddress" required>
-                    </div>
-                    <div class="col-12">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                      </div>
-                    <div class="col-12">
-                        <button class="btn">Submit</button>
-                    </div>
-                </form>
+
+            <div class="contact-body">
+                <div class="container-fluid">
+                    <h3>Feel free to Contact!</h3>
+                    <h5 class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, itaque. Saepe aliquam velit
+                        voluptatibus minima assumenda explicabo consequuntur nostrum veniam soluta omnis, ipsam, minus
+                        laborum adipisci quam reiciendis blanditiis modi pariatur eum ad labore repudiandae voluptatum
+                        exercitationem nihil repellat. Dolorem minus perferendis deleniti?
+                    </h5>
+                    <form class="row g-3">
+                        <div class="col-md-6 mb-md-4 mb-2">
+                            <input type="text" class="form-control" name="fname" placeholder="First Name *" required>
+                        </div>
+                        <div class="col-md-6 mb-md-4 mb-2">
+                            <input type="text" class="form-control" name="lname" placeholder="Last Name">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <textarea class="form-control" name="msg" rows="5" placeholder="Message *"
+                                required></textarea>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-outline-dark">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

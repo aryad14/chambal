@@ -297,161 +297,6 @@ i:hover {
 }
 
 
-.contact-section {
-    padding: 4rem 7rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact-left {
-    max-width: 50%;
-}
-
-.contact-left img {
-    width: 100%;
-}
-
-.contact-right {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5rem;
-}
-
-.contact-right h3 {
-    font-size: 45px;
-    font-weight: 500;
-    font-family: 'Author', sans-serif;
-}
-
-.contact-right h5 {
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 1rem;
-    font-family: 'Ranade', sans-serif;
-}
-
-.contact-right form {
-    margin-top: 2rem;
-}
-
-.contact-right input {
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    padding: 0.75rem 0.75rem;
-    border: 0.5px solid rgb(131, 131, 131);
-}
-
-.contact-right textarea {
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    border: 0.5px solid rgb(132, 132, 132);
-}
-
-.contact-right label {
-    font-size: 16px;
-    margin-top: 0.5rem;
-}
-
-.contact-right button {
-    background-color: transparent;
-    color: #000;
-    padding: 1.25rem 2.25rem;
-    border: 1px solid;
-    border-radius: 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Author', sans-serif;
-    letter-spacing: 1px;
-}
-
-.contact-right button:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-
-@media (max-width: 992px) {
-    .contact-section {
-        padding: 2rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .contact-left {
-        max-width: 100%;
-    }
-
-    .contact-left img {
-        width: 100%;
-    }
-
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .contact-right h3 {
-        font-size: 35px;
-        font-weight: 500;
-        margin-top: 2rem;
-    }
-
-    .contact-right form {
-        margin-top: 0rem;
-    }
-}
-
-
-@media (max-width:768px) {
-
-    .contact-section {
-        padding: 2rem 3rem;
-    }
-
-    .contact-left {
-        max-width: 100%;
-    }
-
-    .contact-left img {
-        width: 100%;
-    }
-
-    .contact-right {
-        display: flex;
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .contact-right h3 {
-        font-size: 35px;
-        font-weight: 500;
-        margin-top: 2rem;
-    }
-
-    .contact-right form {
-        margin-top: 0rem;
-    }
-
-    .contact-right button {
-        background-color: transparent;
-        color: #000;
-        padding: 1rem 1.5rem;
-        border: 1px solid;
-        border-radius: 0;
-    }
-}
-
-
-@media (max-width: 576px) {
-    .contact-section {
-        padding: 2rem 1.5rem;
-    }
-}
-
-
 /* About Page */
 .about-img-wrapper {
     height: 500px;
@@ -466,7 +311,7 @@ i:hover {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    filter: brightness(95%);
+    filter: brightness(70%);
     object-position: center;
 }
 
@@ -553,4 +398,121 @@ i:hover {
 .about-body button:hover {
     background-color: #000;
     color: #fff;
+}
+
+
+
+/* Contact Page */
+.contact-head-wrapper {
+    height: 500px;
+}
+
+.contact-img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(70%);
+    object-position: center;
+}
+
+.contact-img-head {
+    top: 75%;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-img-head h3 {
+    font-size: calc(8rem + .2vw);
+    font-family: 'Author', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    z-index: 1050;
+}
+
+@media (max-width: 768px) {
+    .contact-img-head {
+        top: 69%;
+    }
+
+    .contact-img-head h3 {
+        font-size: 16vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-img-head {
+        top: 79%;
+    }
+
+    .contact-img-head h3 {
+        font-size: calc(12vw + 14px);
+    }
+}
+
+.contact-body {
+    margin: 3rem 8rem;
+}
+
+@media (max-width: 768px) {
+    .contact-body {
+        margin: 3rem 1rem;
+    }
+}
+
+.contact-body h3 {
+    font-family: 'Author', sans-serif;
+    font-size: 45px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact-body h5 {
+    font-family: 'Author', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.contact-body input,
+.contact-body textarea {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid;
+    font-family: 'Author', sans-serif;
+    font-size: 18px;
+    padding: 0 0.5rem;
+}
+
+.contact-body input:focus,
+.contact-body textarea:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #000;
+}
+
+.contact-body button {
+    border-radius: 0;
+    padding: 1rem 2.25rem;
+    font-family: 'Author', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact-body button:focus {
+    border: 1px solid #fff;
+}
+
+@media (max-width: 576px) {
+    .contact-body button {
+        padding: 0.75rem 1.5rem;
+        font-size: 18px;
+    }
 }
